@@ -19,6 +19,7 @@ fi
 
 docker run -d \
    -e URL=$URL \
+   -e REMOTE_DATABASE_URL=$REMOTE_DATABASE_URL \
    --link couchdb:couchdb \
    -v $(pwd)/state.json:/state.json \
    --name $PROCESS_NAME \
