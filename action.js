@@ -3,6 +3,6 @@ module.exports = async function(change, db) {
   if (!doc.dataVersion || doc.dataVersion < 1) {
     doc.foo = true
     doc.dataVersion = 1
+    await db.put(doc)
   }
-  await db.put(doc)
 }
