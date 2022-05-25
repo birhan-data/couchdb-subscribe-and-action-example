@@ -9,3 +9,12 @@ Do you need to subscribe to a CouchDB changes feed and perform an action for the
 - Write your action to each change in the `action.js` file.
 - Run `start.sh` to begin. 
 - If the process is interrupted or crashes, you can rerun `start.sh` and it will pick up back where it left off because it stores the last change processed in the `state.json` file.
+
+## Test
+- Requires VS Code
+- Open the Terminal View
+- Create a new JavaScript Debug Terminal
+
+<img width="1249" alt="Screen Shot 2022-04-20 at 1 26 27 PM" src="https://user-images.githubusercontent.com/8252364/164288229-cb41817e-9531-4176-b402-8e38412ef4c8.png">
+
+- In the new termianl window, run `./test.sh`
